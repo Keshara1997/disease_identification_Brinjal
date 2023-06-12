@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <title>Project Scope</title>
+       
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mask-custom shadow-0">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><span style="color: rgb(31, 115, 54);">GoviSumithuroo</span></a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="color: rgb(0, 0, 0)" >Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projectScope.html" style="color: rgb(0, 0, 0)" >Project Scope</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="milestones.html" style="color: rgb(0, 0, 0)" >Milestones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html" style="color: rgb(0, 0, 0)" >Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="presentations.html" style="color: rgb(0, 0, 0)" >Presentations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html" style="color: rgb(0, 0, 0)" >About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" style="color: rgb(0, 0, 0)" >Contact us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+
+  <!-- Chapter Details -->
+  <div class="chapter">
+
+    
+  <br><br><br>   
+  <h2>Research Project Scope</h2>
+  <br><h5>Page Content</h5>
+    <p><a href="#S1" style="text-decoration: none">Literature Survey</a></p>
+    <p><a href="#S2" style="text-decoration: none">Research Gap</a></p>
+    <p><a href="#S3" style="text-decoration: none">Research Problem</a></p>
+    <p><a href="#S4" style="text-decoration: none">Research Objectives</a></p>
+    <p><a href="#S5" style="text-decoration: none">Methodology</a></p>
+    <p><a href="#S6" style="text-decoration: none">Technologies Used</a></p>
+
+    <br><br>
+    <h2 id="C1">Literature Survey</h2>
+    <p>As a plantation crop, brinjal is affected by many pests and diseases. Brinjal productivity is
+    highly affected by those and the main constraint in disease and pest management is the lack
+    of knowledge on identification and evaluation of the severity of diseases and pests. When
+    considering the brinjal diseases and pests; Leafhopper damage, Hadda beetle and Red spider
+    mite damage[2] is the most important to consider because leafhopper does the most
+    impairment to the plant in Sri Lanka. The most obvious symptom of leafhopper feeding is
+    hopper burn.Hopper burn is the yellowing of the leaf margin. This damage is followed by
+    leaf curling and necrosis. Hopper burn occurs because leafhoppers feed by sucking the juices
+    out of leaf veins and blocking the veins with a toxin in their saliva.
+    Once hopper-burn is seen the plant has been damaged, which will either reduce yield or the
+    quality of brinjal. Most of the brinjal farmers are not aware of pests eating patterns. In
+    addition to that, delays in communication between farmers and agricultural specialists are
+    another factor that hampers the effectiveness of the disease and pest management programs.
+    Therefore, an efficient management system that provide farmer education while helping
+    farmers to detect and identify diseases can be used to uplift the agriculture industry in Sri
+    Lanka.</p>
+    
+    <br><br>
+    <h2 id="S2">Research Gap</h2>
+    <p>
+      <b>Real-time detection of leaves available in a plants and classification of
+      healthy and unhealthy (suspicious) leaflets.
+     </b>
+      
+      Detect possible plant leaves and extract them separately from other objects using Yolov5
+      object detection algorithm.
+      Classify healthy and unhealthy (suspicious) leaflets from other leaves in the plant.
+      Crop Segmenting (separating the background and cropping the region inside the bounding
+      box) the suspicious leaflets separately from each finger in the plant. (Only the suspicious
+      leaflets are extracted, others are disregarded) then provide those images for further
+      classification to identify the disease.
+
+
+      <br><br><b>Identify and classify the (Leafhopper damage, Hadda beetle and Red
+      spider mite damage) using transfer learning based CNN models with high confidence scores.</b>
+          
+        Transfer learning based CNN is used to classify the disease. Various CNN architectures
+        are used to compare and find the best fit architecture. The accuracy of each architecture's
+        result is compared, and the best one is chosen to train the model to identify diseases.
+         Multi-Class Image Classification techniques are used to classify diseases based on their
+        eating patterns.        
+         The custom image set will be pre-processed to reduce image sample similarities and to
+        avoid model over and underfitting.
+         Layers of the CNN architecture will be altered (dropped and frozen) according to get a
+        good fit model.
+
+
+      <br><br><b>Identify the severity level of infection or stage of the detected disease
+      using Mask R-CNN.</b>
+     The crop segmented leaf image is further processed to determine the severity level of
+    infection or stage of the detected disease by calculating the ratio of total leaf area to infected
+    portion.
+     The factors which determine the severity/stage of the disease are analyzed. It can be the
+    portion of the area it has spread, or the color texture changes in the leaf.
+     The masked area is extracted from the image. Color segmentation is used to group different
+    color pigments present in the image in order to distinguish between healthy and diseased
+    pigments.
+     The K-means clustering algorithm is used to calculate the percentage of damage by
+    calculating the ratio between the colors (which were clustered using color segmentation).
+
+
+
+      <br><br><b>Manual recognition of diseases using Natural Language Processing (NLP)
+      with the help of Facebook posts.</b>
+     It can be difficult to predict the disease with high confidence all of the time. Users can seek
+    assistance from the community if the identified disease or pest has a low confidence score
+    using a Facebook post
+     Users can click on a buttons after the disease is identified so that the disease images along
+    with a question will be posted on Facebook as a post.
+     Experts, farmers, and other agricultural professionals in the group can leave comments on
+    the post. They can provide feedback on whether or not the disease has been correctly
+    identified.
+     Using NLP, the most frequently occurring world will be extracted and analyzed to
+    determine whether the prediction is correct or not. If not, the community-suggested disease
+    will be sent to the application.
+ </p>
+    
+    <br><br>
+    <h2 id="S3">Research Problem</h2>
+    <p>Since ancient times, Sri Lanka has been an agricultural country. The agricultural sector will
+    contribute 7.8 percent of the gross national product by 2021. Agriculture employs more than
+    a quarter of all Sri Lankans. Due to the COVID-19 epidemic in 2019, most citizens turned to
+    gardening, and now, due to the nation's dollar crisis and high prices of goods, citizens have
+    turned to gardening even more. Although Sri Lanka is a fertile tropical country with the
+    potential to grow and process a wide range of crops, issues such as productivity, knowledge,
+    and profitability are impeding the sector's growth.
+    A big problem for the farmers, as well as the common people, is that they do not have proper
+    knowledge about farming, so the productivity of the crops is reduced and the crops are
+    destroyed due to the inability to identify the diseases affecting the respective crops. Due to
+    the prevailing situation in the country, it is always difficult to meet the agriculture officials,
+    so they have no other way to get knowledge about it. These problems discourage gardeners
+    and farmers from cultivating.
+    Sri Lanka has a large number of plants used for Gardening as well as industries Among them,
+    when we consider the brinjal crop, we can identify the damages caused to it as follows.
+    Solanum species (eggplants) belong to the family of Solanaceae and genus Solanum, with
+    over 1,000 species worldwide. Eggplant or brinjal (solanum melongina) is a well-known
+    vegetable in local and world markets. The world's annual brinjal production is approximately
+    43, 173,989 MT and the area under brinjal cultivation is 1,728,271ha. There are six main
+    varieties of brinjal in Sri Lanka. They are Amanda F1, Anjalee-F1, HORDI Lenairi 1,
+    Thinnaweli purple, Padagoda, and SM 164. Badulla, Hambantota, and Anuradhapura are the
+    major brinjal cultivating areas in Sri Lanka. The Total extent of brinjal under cultivation in
+    Sri Lanka is about 9,665 ha with a total production of about 108,856 t and an average yield
+    of about 11.26 t/ha (AgStat, 2018).
+    As a plantation crop, brinjal is affected by many pests and diseases. Brinjal productivity is
+    highly affected by those and the main constraint in disease and pest management is the lack
+    of knowledge on identification and evaluation of the severity of diseases and pests. When
+    considering the brinjal diseases and pests; Leafhopper damage, Hadda beetle and Red spider
+    mite damage[2] is the most important to consider because leafhopper does the most
+    impairment to the plant in Sri Lanka. The most obvious symptom of leafhopper feeding is
+    hopper burn.Hopper burn is the yellowing of the leaf margin. This damage is followed by
+    leaf curling and necrosis. Hopper burn occurs because leafhoppers feed by sucking the juices
+    out of leaf veins and blocking the veins with a toxin in their saliva.Once hopper-burn is seen the plant has been damaged, which will either reduce yield or the
+    quality of brinjal. Most of the brinjal farmers are not aware of pests eating patterns. In
+    addition to that, delays in communication between farmers and agricultural specialists are
+    another factor that hampers the effectiveness of the disease and pest management programs.
+    Therefore, an efficient management system that provide farmer education while helping
+    farmers to detect and identify diseases can be used to uplift the agriculture industry in Sri
+    Lanka.
+    </p>
+    
+    <br><br>
+    <h2 id="S4">Research Objectives</h2>
+    <p>
+      <b>Main Objectives</b>
+      <br>1)	Real-time detection of leaves available in a plants and classification of      healthy and unhealthy (suspicious) leaflets.
+      
+      
+      <br><br>2)Identify and classify the (Leafhopper damage, Hadda beetle and Red
+      spider mite damage) using transfer learning based CNN models with high
+      confidence scores.
+
+    
+      <br><br>3)	Identify the severity level of infection or stage of the detected disease
+      using Mask R-CNN.
+      <br><br>4)	Manual recognition of diseases using Natural Language Processing (NLP)
+      with the help of Facebook posts.
+      <br><br>
+      
+    
+    </p>
+    
+    <br><br>
+    <h2 id="S5">Methodology</h2><p>
+      This study proposes a mobile application to learn about
+      farming and identify the disease by capturing an image of a
+      plant. All of the leafs are detected separately and classified
+      as healthy or unhealthy (suspicious) using techniques
+      (YOLO). Only the suspicious leafs are extracted using crop
+      segmentation and sent through Convolutional Neural
+      Network (CNN) models to clearly classify and distinguish
+      the diseases using feature extraction. The system will
+      identify and classify the diseases, as well as provide aconfidence score for the detection. Once the leaf is identified
+      to be infected, the images will go through the Mask-R-CNN
+      model to determine the progression level of the disease
+      according to severity levels.
+      Users can seek assistance from the community if the
+      identified disease or pest has a low confidence score. A post
+      about the disease will be published in a Facebook group run
+      by agricultural experts and farmers. Their comments on the
+      post will be filtered. The most frequently suggested disease
+      will be sorted and displayed in the app. This can be achieved
+      using Natural Language Processing (NLP). The results of
+      the ML models can be further validated by checking with the
+      answers of the experts.
+  
+    </p>
+    
+    <br><br>
+    <h2 id="S6">Tools and Technologies Used</h2>
+    <p>
+      <b>1.	Android Studio</b>
+      <br>For the application implementation, the android studio was used with java language. Multiple libraries and google services helped to stable the Application on any android device.
+      
+      <br><br><b>2.	Jupyter Notebook</b>
+      <br>The Jupyter notebook was utilized during the model training phase. The Jupyter notebook was used to train the SVR, LSTM, and ARIMA models as well as to visualize the forecasted data. 
+      <br>That technology was used for further organize the past market prices by data cleaning and used Jupyter notebook as visualize forecasted data with predicted market prices data and to analyze those data
+      
+      <br><br><b>3.	MySql</b>
+      <br>MySql Database was used to store Soil types data, Rainfall data, and Forecasted data.
+    
+      <br><br><b>4.	Microsoft Excel</b>
+      <br>Excel was used to organize data gathered in the interview and calculate average rainfall data with past cost data. The datasets were also created using excel, which has been used to train the model.
+      <br>And also it organizes and manipulates data and solves mathematical functions by using a large collection of formatted cells. When collecting each district market prices data for each cardamom, pepper, vanilla plant, Microsoft excel used as a data storing using CSV format and also for the data cleaning and transformation functions. 
+    
+      <br><br><b> 5.	API’s</b>
+      <br>Using Google Map API, the location of the Farmer has been identified. And also Another API were used to make a faster connection between the Database and the Application by updating a JSON file.
+     
+      <br><br><b>6.	Anaconda Environment and Jupyter notebook</b>
+      <br>At the beginning of the dataset training, team VAPECA used Jupyter notebook with Anaconda prompt to run the python codes. But later, team moved to the Google colaboratory by considering the time taken to fit the model.
+          
+      <br><br><b> 7.	Google colaboratory</b>
+      <br>When using google colaboratory, the runtime type Hardware acceleration changed to Graphics Processing Units (GPU) in order to accelerate the tasks.
+      
+      <br><br><b>8.	Firebase Database</b>
+      <br>Firebase database was used to store the user details of VAPECA application.
+    
+      <br><br><b> 9.	Python </b>
+      <br>Python is used as the programming language for trained and forecasted the past local market prices using with different time series analysis models. For machine learning algorithms Python language is mostly used. By using Jupyter notebook, time series analysis algorithms are coded.
+   
+      <br><br><b>10.	OpenCV and Tensor Flow</b>
+      <br>OpenCV is a software library for computer vision and machine learning. OpenCV was created to give computer vision applications a common framework and to speed up the incorporation of artificial intelligence into products. VAPECA uses OpenCV and TensorFlow for the image processing component.
+    
+      <br><br><b>11.	Open Weather API</b>
+      <br>OpenWeatherMap is an online service, owned by OpenWeather Ltd, that offers global weather data via API, including real-time weather information, forecasts, nowcasts, and historical weather information for any location. VAPECA uses openWeather API for get future weather details.
+
+    </p>
+
+   <!-- Footer -->
+   <br>
+   <div class="container my-5">
+     <!-- Footer -->
+     <footer
+             class="text-center text-lg-start text-dark"
+             style="background-color: #ECEFF1"
+             >
+       <!-- Section: Social media -->
+       <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #4ebe6f"
+               >
+         <!-- Left -->
+         <div class="me-5">
+           <span>Get connected with us on social networks:</span>
+         </div>
+         <!-- Left -->
+ 
+         <!-- Right -->
+         <div>
+           <a href="" class="text-white me-4">
+             <i class="fab fa-facebook-f"></i>
+           </a>
+           <a href="" class="text-white me-4">
+             <i class="fab fa-google"></i>
+           </a>
+           <a href="https://www.linkedin.com/in/uvin-jithmal-855617245/?originalSubdomain=lk" class="text-white me-4">
+             <i class="fab fa-linkedin"></i>
+           </a>
+           <a href="https://github.com/Kalindu-Laksahan/Vapeca-Website" class="text-white me-4">
+             <i class="fab fa-github"></i>
+           </a>
+         </div>
+         <!-- Right -->
+       </section>
+       <!-- Section: Social media -->
+ 
+       <!-- Section: Links  -->
+       <section class="">
+         <div class="container text-center text-md-start mt-5">
+           <!-- Grid row -->
+           <div class="row mt-3">
+             <!-- Grid column -->
+             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+               <!-- Content -->
+               <h6 class="text-uppercase fw-bold">Export Agri Solutions (Pvt) Ltd</h6>
+               <hr
+                   class="mb-4 mt-0 d-inline-block mx-auto"
+                   style="width: 60px; background-color: #7c4dff; height: 2px"
+                   />
+               <p>
+                 Export Agri Solutions (Pvt) Ltd 
+                 is an IT company that provides 
+                 IT solutions for export agricultural 
+                 plant issues and as well as cultivation issues. 
+                 Our mission is to provide best solutions with new technologies for all export agricultural plant issues and tend all 
+                 experienced and unexperienced people towards export agriculture by simplify their works.
+ 
+               </p>
+             </div>
+             <!-- Grid column -->
+ 
+             <!-- Grid column -->
+             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+               <!-- Links -->
+               <h6 class="text-uppercase fw-bold">Products</h6>
+               <hr
+                   class="mb-4 mt-0 d-inline-block mx-auto"
+                   style="width: 60px; background-color: #7c4dff; height: 2px"
+                   />
+               <p>
+                <a href="#!" class="text-dark">Govisumithuro</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-dark">Smart farmer education system for disease identification, severity assessment and
+                    infestation management (Brinjal)
+                  </a>
+             </div>
+             <!-- Grid column -->
+ 
+             <!-- Grid column -->
+             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               <!-- Links -->
+               <h6 class="text-uppercase fw-bold">Useful links</h6>
+               <hr
+                   class="mb-4 mt-0 d-inline-block mx-auto"
+                   style="width: 60px; background-color: #7c4dff; height: 2px"
+                   />
+                   <p>
+                     <a href="index.html" class="text-dark">Home</a>
+                   </p>
+                   <p>
+                     <a href="aboutus.html" class="text-dark">About Us</a>
+                   </p>
+                   <p>
+                     <a href="projectScope.html" class="text-dark">Project Scope</a>
+                   </p>
+                   <p>
+                     <a href="contactus.html" class="text-dark">Help</a>
+                   </p>
+             </div>
+             <!-- Grid column -->
+ 
+             <!-- Grid column -->
+             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+               <!-- Links -->
+               <h6 class="text-uppercase fw-bold">Contact</h6>
+               <hr
+                   class="mb-4 mt-0 d-inline-block mx-auto"
+                   style="width: 60px; background-color: #7c4dff; height: 2px"
+                   />
+            <p><i class="fas fa-home mr-3"></i> 176/A, Kotalawala, Kaduwela, Sri Lanka</p>
+            <p><i class="fas fa-envelope mr-3"></i> kavindakeshara1997@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 94 75 552 30 83</p>
+             </div>
+             <!-- Grid column -->
+           </div>
+           <!-- Grid row -->
+         </div>
+       </section>
+       <!-- Section: Links  -->
+ 
+       <!-- Copyright -->
+       <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+         © 2022 Copyright:
+         <a class="text-dark" href="index.html"
+           >VAPECA.com</a
+           >
+       </div>
+       <!-- Copyright -->
+     </footer>
+     <!-- Footer -->
+   </div>
+   <br>
+    
+  </div>
+
+
+  
+
+</body>
+</html>
+
